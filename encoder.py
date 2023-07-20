@@ -27,7 +27,16 @@ def decode(password_encoded):
         decoded_num = str((int(i) - 3) % 10)
         password += decoded_num
     return password
+#original decode function
+#def decoder(password):
 
+ # b=[]
+ # for i in password:
+    # c=(int(i)-3)%10
+  #   str(c)
+  #   b.append(c)
+  # for j in b:
+  #   print(j,end="")
 while a is True:
   print(" ")
   print("choose you opition ")
