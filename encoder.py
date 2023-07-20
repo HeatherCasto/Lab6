@@ -3,11 +3,24 @@ def encoder(password):
   b=[]
   for i in password:
     #int(i)
-    c=(int(i)+3)%9
+    c=(int(i)+3)%10
     str(c)
     b.append(c)
   for j in b:
     print(j,end="")
+ b=[]
+  for i in password:
+    c=(int(i)-3)%10
+    str(c)
+    b.append(c)
+  for j in b:
+    print(j,end="")
+  # for j in b:
+  #   print(b)
+  # b=str(b)[1:-1]
+  # ' '.join(b)
+  # for j in b:
+  #   print(b)
 while a is True:
   print(" ")
   print("choose you opition ")
@@ -16,3 +29,5 @@ while a is True:
   password=str(input("enter the password"))
   if inp==1:
              encoder(password)
+  elif inp==2:
+    decoder(password)
