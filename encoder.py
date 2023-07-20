@@ -21,6 +21,13 @@ def encoder(password):
   # ' '.join(b)
   # for j in b:
   #   print(b)
+def decode(password_encoded):
+    password = ""
+    for i in password_encoded:
+        decoded_num = str((int(i) - 3) % 10)
+        password += decoded_num
+    return password
+
 while a is True:
   print(" ")
   print("choose you opition ")
